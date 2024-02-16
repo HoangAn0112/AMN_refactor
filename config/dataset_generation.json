@@ -139,5 +139,33 @@
             "dataset_dir": "/Dataset/",
             "dataset_name": "iML1515_EXP_2_UB"
         }
+    }, 
+    "iML1515_Paul_280": {
+        "method_generation": "simulated",
+        "MetabolicDataset_parameters": {
+            "cobra_file": "/Dataset_input/iML1515_duplicated.xml",
+            "experimental_file": "/Dataset_input/iML1515_Paul_280.csv",
+            "medium_file": "/Dataset_input/Paul_media.csv",
+            "method": "pFBA",
+            "medium_bound": "UB",
+            "sample_size": 100
+        },
+        "saving_parameters": {
+            "dataset_dir": "/Dataset/",
+            "dataset_name": "iML1515_Paul_280"
+        }
+    },
+    "iML1515_Paul_EXP": {
+        "method_generation": "experimental",
+        "MetabolicDataset_parameters": {
+            "cobra_file": "/Dataset_input/iML1515_duplicated.xml",
+            "medium_file": "/Dataset_input/iML1515_Paul_280.csv",
+            "method": "EXP",
+            "medium_bound": "UB"
+        },
+        "saving_parameters": {
+            "dataset_dir": "/Dataset/",
+            "dataset_name": "iML1515_Paul_EXP"
+        }
     }
 }

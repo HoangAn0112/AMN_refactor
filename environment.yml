@@ -18,3 +18,5 @@ dependencies:
   - pip:
     - silence-tensorflow
     - -e ./amn/.
+    - ray=2.7.2
+    - protobuf=3.20.*

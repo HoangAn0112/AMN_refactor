@@ -1,6 +1,9 @@
 import os
 import json
 import numpy as np
+#sys.path.append('..\\AMN_refactor\\amn')
+os.chdir("c:\\Users\\tnhoang\\Documents\\refactor_AMN\\AMN_refactor")
+
 from amn.dataset import SimulatedDataset
 from amn.dataset import ExperimentalDataset
 from amn.dataset import MetabolicDataset
@@ -39,8 +42,8 @@ def generate_dataset(dataset_name,generation_parameters_file,data_dir,verbose=Fa
 if __name__ == "__main__":
 
     seed = 10
-    generation_file = "../config/dataset_generation.json"
-    data_dir = "../data"
+    generation_file = "config/dataset_generation.json"
+    data_dir = "data"
 
     dataset_name = "iML1515_EXP_UB"
     dataset_name = "biolog_iML1515_medium_UB"
@@ -49,6 +52,8 @@ if __name__ == "__main__":
     dataset_name = "iML1515_UB"
     dataset_name = "IJN1463_EXP_UB"
     dataset_name = "iML1515_EXP_2_UB"
+    dataset_name = "iML1515_Paul_280"
+    dataset_name = "iML1515_Paul_EXP"
 
     np.random.seed(seed=10)  
     generate_dataset(dataset_name,generation_file,data_dir,verbose=False)
